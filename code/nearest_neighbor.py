@@ -3,7 +3,8 @@
 # Purpose: This file reads the CVRPLIB data file, runs the nearest neighbbor algorithm on it, and 
 # prints the routes and total distance. You can run this using "python code/nearest_neighbor.py data/A-n32-k5.vrp"
 # There are four data options: A-n32-k5.vrp has 31 customers, E-n51-k5.vrp has 50 customers, E-n101-k8.vrp has 100 customers, 
-# and M-n200-k16.vrp has 199 customers.
+# and M-n200-k16.vrp has 199 customers. If you want to run all for tests at once and save results to CSV file, 
+# run "python code/run_nearest_neighbor.py"
 
 import math
 import sys

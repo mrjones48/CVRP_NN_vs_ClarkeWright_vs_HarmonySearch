@@ -71,13 +71,12 @@ for filepath, best_known in data_files:
         number_of_trials,
     ])
 
-
 # PART 2: SAVE ALL THE RESULTS INTO A CSV FILE
 
 output_file = open("results/nearest_neighbor_results.csv", "w")
 
 # write the header row (column names)
-output_file.write("instance,num_customers,num_routes,total_distance,best_known_optimal,gap_percent,avg_runtime_ms,trials\n")
+output_file.write("data file,num_customers,num_routes,total_distance,best value,gap_percent,avg_runtime_ms,trials\n")
 
 # write one row per data file
 for row in all_results:

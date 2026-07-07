@@ -4,4 +4,4 @@ The CVRP finds optimal vehicle routes to deliver goods to customers while minimi
 ## Team Members
 - Charles Davis
 - Tristen Martin
-- [Tomu Yamashita] (https://github.com/Tomu150423)
+- [Tomu Yamashita](https://github.com/Tomu150423)

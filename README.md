@@ -2,9 +2,9 @@
 
 ## Team Members
 - [Mandy Jones](https://github.com/mrjones48)
-- Charles Davis
-- Tristen Martin
+- [Tristen Martin](https://github.com/tmartin6985)
 - [Tomu Yamashita](https://github.com/Tomu150423)
+- Charles Davis
 
 ## Problem Description
 The CVRP finds optimal vehicle routes to deliver goods to customers while minimizing cost, with each vehicle limited by a fixed capacity. The Nearest Neighbor Heuristic, repeatedly visiting the closest unvisited customer until capacity is reached, serves as a baseline algorithm for comparison.

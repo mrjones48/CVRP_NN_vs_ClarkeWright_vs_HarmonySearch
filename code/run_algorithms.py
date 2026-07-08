@@ -7,6 +7,7 @@
 import time
 from nearest_neighbor import read_vrp_file, nearest_neighbor, total_distance
 from clarke_wright import clarke_wright
+from harmony_search import harmony_search
 
 # List of data files we want to test, along with the best known optimal
 # distance for each one (found in the COMMENT line of each .vrp data file).
@@ -24,6 +25,7 @@ data_files = [
 algorithms = [
     ("nearest_neighbor", nearest_neighbor),
     ("clarke_wright", clarke_wright),
+    ("harmony_search", harmony_search),
 ]
 
 number_of_trials = 10  # how many times to run each file

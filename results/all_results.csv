@@ -1,9 +1,13 @@
 algorithm,data file,num_customers,num_routes,total_distance,best_value,gap_percent,avg_runtime_ms,trials
-nearest_neighbor,data/A-n32-k5.vrp,31,5,1146.4,784,46.22,0.1815,10
-nearest_neighbor,data/E-n51-k5.vrp,50,5,711.5,521,36.56,0.6783,10
-nearest_neighbor,data/E-n101-k8.vrp,100,8,1174.36,815,44.09,1.7356,10
-nearest_neighbor,data/M-n200-k16.vrp,199,17,2034.4,N/A,N/A,6.6873,10
-clarke_wright,data/A-n32-k5.vrp,31,5,843.69,784,7.61,1.1698,10
-clarke_wright,data/E-n51-k5.vrp,50,6,584.64,521,12.21,3.1485,10
-clarke_wright,data/E-n101-k8.vrp,100,8,889.0,815,9.08,16.0064,10
-clarke_wright,data/M-n200-k16.vrp,199,17,1395.74,N/A,N/A,130.4101,10
+nearest_neighbor,data/A-n32-k5.vrp,31,5,1146.4,784,46.22,0.1821,10
+nearest_neighbor,data/E-n51-k5.vrp,50,5,711.5,521,36.56,0.5817,10
+nearest_neighbor,data/E-n101-k8.vrp,100,8,1174.36,815,44.09,2.2762,10
+nearest_neighbor,data/M-n200-k16.vrp,199,17,2034.4,N/A,N/A,8.5168,10
+clarke_wright,data/A-n32-k5.vrp,31,5,843.69,784,7.61,1.6728,10
+clarke_wright,data/E-n51-k5.vrp,50,6,584.64,521,12.21,4.9943,10
+clarke_wright,data/E-n101-k8.vrp,100,8,889.0,815,9.08,19.3448,10
+clarke_wright,data/M-n200-k16.vrp,199,17,1395.74,N/A,N/A,111.6446,10
+harmony_search,data/A-n32-k5.vrp,31,5,1714.2,784,118.65,155.3155,10
+harmony_search,data/E-n51-k5.vrp,50,6,1281.13,521,145.9,416.1114,10
+harmony_search,data/E-n101-k8.vrp,100,8,2106.33,815,158.45,2204.2205,10
+harmony_search,data/M-n200-k16.vrp,199,17,4915.27,N/A,N/A,49263.7119,10

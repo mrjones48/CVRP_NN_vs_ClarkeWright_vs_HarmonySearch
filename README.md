@@ -37,10 +37,11 @@ Run all experiments and save results to CSV:
    python code/run_algorithms.py
 
 Optional:
-Run Nearest Neighbor on a single instance:
+Run a particular algorithm on a single instance:
    python code/nearest_neighbor.py data/A-n32-k5.vrp
 
-Switch out "A-n32-k5.vrp" with the following to view the results of the other datasets tested: "E-n51-k5", "E-n101-k8", and "M-n200-k16". To individually test these data sets with other algorithms, switch "nearest_neighbor" with the "clarke_wright" or "harmony_search".
+Switch out "A-n32-k5.vrp" with the following to view the results of the other datasets tested: "E-n51-k5", "E-n101-k8", and "M-n200-k16". 
+To individually test these data sets with other algorithms, switch "nearest_neighbor" with "clarke_wright" or "harmony_search".
 
 ## GenAI Usage Disclosure 
 This project used Claude (Anthropic) for debugging code, understanding Python concepts, and Git/GitHub troubleshooting. All algorithmic implementation and analysis were completed by the team.

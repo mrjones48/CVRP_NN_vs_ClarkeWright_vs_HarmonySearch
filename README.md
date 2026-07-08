@@ -19,7 +19,28 @@ Data from [CVRPLIB](https://galgos.inf.puc-rio.br/cvrplib/en/instances/1) is use
 In particular the algorithms use A-n32-k5, E-n51-k5, E-n101-k8, and M-n200-k16. 
 
 ## How to Run the Project
-To run all algorithms and save the results to a CSV file (results found in results folder), run "python code/run_algorithms.py" or run each test individually with "python code/nearest_neighbor.py data/A-n32-k5.vrp". This prints out a table with each algorithm and its results for easy comparison. Switch out "A-n32-k5.vrp" with the following to view the results of the other datasets tested: "E-n51-k5", "E-n101-k8", and "M-n200-k16". To individually test these data sets with other algorithms, switch "nearest_neighbor" with the "clarke_wright" or "harmony_search".
+This can be done in a command prompt.
+
+Make sure Git is installed: 
+  git --version
+
+If you don't have it, go to (https://git-scm.com/download/win) to download the installer. 
+If you don't have Python, make sure to download the installer too at (https://www.python.org/downloads/).
+
+Clone the repository:
+   git clone https://github.com/mrjones48/CVRP_NN_vs_ClarkeWright_vs_HarmonySearch.git
+
+Change to directory:
+   cd CVRP_NN_vs_ClarkeWright_vs_HarmonySearch
+
+Run all experiments and save results to CSV:
+   python code/run_experiments.py
+
+Optional:
+Run Nearest Neighbor on a single instance:
+   python code/nearest_neighbor.py data/A-n32-k5.vrp
+
+To run all algorithms and save the results to a CSV file (results found in Results folder), run "python code/run_algorithms.py" or run each test individually with "python code/nearest_neighbor.py data/A-n32-k5.vrp". This prints out a table with each algorithm and its results for easy comparison. Switch out "A-n32-k5.vrp" with the following to view the results of the other datasets tested: "E-n51-k5", "E-n101-k8", and "M-n200-k16". To individually test these data sets with other algorithms, switch "nearest_neighbor" with the "clarke_wright" or "harmony_search".
 
 ## GenAI Usage Disclosure 
 This project used Claude (Anthropic) for debugging code, understanding Python concepts, and Git/GitHub troubleshooting. All algorithmic implementation and analysis were completed by the team.

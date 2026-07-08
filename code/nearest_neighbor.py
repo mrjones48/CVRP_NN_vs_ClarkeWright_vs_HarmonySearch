@@ -1,4 +1,3 @@
-
 # Author: Mandy Jones
 # Purpose: This file reads the CVRPLIB data file, runs the nearest neighbbor algorithm on it, and 
 # prints the routes and total distance. 
@@ -80,7 +79,7 @@ def read_vrp_file(filepath):
 
 # DISTANCE CALCULATION 
 
-# This function calculates the distance between two points using the Pythagorean theorem
+# This function calculates the Euclidean distance between two points using the Pythagorean theorem
 def distance_between(point_a, point_b):
     x1, y1 = point_a
     x2, y2 = point_b

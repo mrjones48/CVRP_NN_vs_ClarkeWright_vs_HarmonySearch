@@ -6,7 +6,7 @@
 # You can run this using "python code/harmony_search.py data/A-n32-k5.vrp"
 # There are four data options: A-n32-k5.vrp has 31 customers, E-n51-k5.vrp has 50 customers, E-n101-k8.vrp has 100 customers, 
 # and M-n200-k16.vrp has 199 customers. If you want to run all four tests at once and save results to CSV file, 
-# run "python code/run_harmony_search.py"
+# run "python code/run_algorithms.py"
 
 import math
 import sys

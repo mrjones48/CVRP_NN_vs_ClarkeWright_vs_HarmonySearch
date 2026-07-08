@@ -16,10 +16,10 @@ The CVRP finds optimal vehicle routes to deliver goods to customers while minimi
 
 ## Datasets Used
 Data from [CVRPLIB](https://galgos.inf.puc-rio.br/cvrplib/en/instances/1) is used for all three algorithms. 
-Nearest Neighbor in particular uses A-n32-k5, E-n51-k5, E-n101-k8, and M-n200-k16. 
+In particular the algorithms use A-n32-k5, E-n51-k5, E-n101-k8, and M-n200-k16. 
 
 ## How to Run the Project
-Nearest Neighbor: Can run all four tests and save the results to a CSV file (results found in results folder) with "python code/run_nearest_neighbor.py" or run each test individually with "python code/nearest_neighbor.py data/A-n32-k5.vrp". Switch out "A-n32-k5.vrp" with the following to view the results of the other datasets tested: "E-n51-k5", "E-n101-k8", and "M-n200-k16".
+To run all algorithms and save the results to a CSV file (results found in results folder), run "python code/run_algorithms.py" or run each test individually with "python code/nearest_neighbor.py data/A-n32-k5.vrp". This prints out a table with each algorithm and its results for easy comparison. Switch out "A-n32-k5.vrp" with the following to view the results of the other datasets tested: "E-n51-k5", "E-n101-k8", and "M-n200-k16". To individually test these data sets with other algorithms, switch "nearest_neighbor" with the "clarke_wright" or "harmony_search".
 
 ## GenAI Usage Disclosure 
 This project used Claude (Anthropic) for debugging code, understanding Python concepts, and Git/GitHub troubleshooting. All algorithmic implementation and analysis were completed by the team.

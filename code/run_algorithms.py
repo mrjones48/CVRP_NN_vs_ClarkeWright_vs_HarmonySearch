@@ -93,7 +93,7 @@ for algorithm_name, algorithm_function in algorithms:
 output_file = open("results/all_results.csv", "w")
 
 # writes the header row (the column names)
-output_file.write("algorithm,instance,num_customers,num_routes,total_distance,best_known_optimal,gap_percent,avg_runtime_ms,trials\n")
+output_file.write("algorithm,data file,num_customers,num_routes,total_distance,best_value,gap_percent,avg_runtime_ms,trials\n")
 
 # writes one row per algorithm + data file combination
 for row in all_results:

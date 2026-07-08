@@ -1,7 +1,8 @@
 
 # Author: Mandy Jones
 # Purpose: This file reads the CVRPLIB data file, runs the nearest neighbbor algorithm on it, and 
-# prints the routes and total distance. You can run this using "python code/nearest_neighbor.py data/A-n32-k5.vrp"
+# prints the routes and total distance. 
+# You can run this using "python code/nearest_neighbor.py data/A-n32-k5.vrp"
 # There are four data options: A-n32-k5.vrp has 31 customers, E-n51-k5.vrp has 50 customers, E-n101-k8.vrp has 100 customers, 
 # and M-n200-k16.vrp has 199 customers. If you want to run all four tests at once and save results to CSV file, 
 # run "python code/run_nearest_neighbor.py"
@@ -9,7 +10,7 @@
 import math
 import sys
 
-# PART 1: READ THE DATA FILE
+# READ THE DATA FILE
 
 # This function reads the .vrp file and pulls out the following: 
 # the customer's coordinates, how much ea customer needs delivered, how 
@@ -77,7 +78,7 @@ def read_vrp_file(filepath):
 
     return coords, demands, capacity, depot_id
 
-# PART 2: DISTANCE CALCULATION 
+# DISTANCE CALCULATION 
 
 # This function calculates the distance between two points using the Pythagorean theorem
 def distance_between(point_a, point_b):
@@ -94,7 +95,7 @@ def total_distance(routes, coords):
     return grand_total
 
 
-# PART 3: NEAREST NEIGHBOR ALGORITHM
+# NEAREST NEIGHBOR ALGORITHM
 
 # This function starts at the depot and then goes to the unvisited customer that is the closest + fits into the truck.
 # It repeats this until no more customers fit and then sends the truck home and starts a new one. It keeps going until every customer is visited.
@@ -139,7 +140,7 @@ def nearest_neighbor(coords, demands, capacity, depot_id):
 
     return all_routes
 
-# PART 4: RUNS WHEN EXECUTING FILE DIRECTLY
+# RUNS WHEN DIRECTLY EXECUTING FILE
 
 if __name__ == "__main__":
 

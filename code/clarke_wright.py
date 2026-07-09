@@ -1,17 +1,23 @@
 # Author: Mandy Jones
 # Purpose: Implements the Clarke-Wright Savings Algorithm for CVRP.
-# This algorithm starts by assigning each customer their own truck, which travels from the depot to that customer and back.
-# For ea pair of customers, the algorithm calculates how much distance is saved by combining their two separate trips 
-# into one that visits both customers. This will be referred to as the "savings" value. Then, it sorts all savings
-# from biggest to smallest. It will go through the sorted list and merge routes, starting with the biggest savings as
+# This algorithm starts by assigning each customer their own truck, 
+# which travels from the depot to that customer and back.
+# For ea pair of customers, the algorithm calculates how much distance
+# is saved by combining their two separate trips into one that visits 
+# both customers. This will be referred to as the "savings" value. Then, 
+# it sorts all savings from biggest to smallest. It will go through the 
+# sorted list and merge routes, starting with the biggest savings as
 # long as the following conditions are met: 
-# - The two customers are at the open ends of their routes, the first or last customer in the list.
+# - The two customers are at the open ends of their routes, the first or 
+#   last customer in the list.
 # - They aren't currently in the same route.
 # - Combining them doesn't go over the truck's capacity.
 # Finally, the algorithm keeps merging until no more valid merges are left. 
 # You can run this using "python code/clarke_wright.py data/A-n32-k5.vrp"
-# There are four data options: A-n32-k5.vrp has 31 customers, E-n51-k5.vrp has 50 customers, E-n101-k8.vrp has 100 customers, 
-# and M-n200-k16.vrp has 199 customers. If you want to run all four tests at once and save results to CSV file, 
+# There are four data options: A-n32-k5.vrp has 31 customers, 
+# E-n51-k5.vrp has 50 customers, E-n101-k8.vrp has 100 customers, 
+# and M-n200-k16.vrp has 199 customers. If you want to run all four tests 
+# at once and save results to CSV file (located in results/all_results.csv), 
 # run "python code/run_algorithms.py"
 
 import math

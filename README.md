@@ -35,6 +35,7 @@ Change to directory:
 
 Run all experiments and save results to CSV:
    python code/run_algorithms.py
+Note: Running this will take a moment because of the Harmony Search algorithm.
 
 Optional:
 Run a particular algorithm on a single instance:

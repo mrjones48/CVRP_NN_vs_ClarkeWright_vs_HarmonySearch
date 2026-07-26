@@ -2,7 +2,7 @@
 # Purpose: Implements the Clarke-Wright Savings Algorithm for CVRP.
 # This algorithm starts by assigning each customer their own truck, 
 # which travels from the depot to that customer and back.
-# For ea pair of customers, the algorithm calculates how much distance
+# For each pair of customers, the algorithm calculates how much distance
 # is saved by combining their two separate trips into one that visits 
 # both customers. This will be referred to as the "savings" value. Then, 
 # it sorts all savings from biggest to smallest. It will go through the 
@@ -31,7 +31,7 @@ def distance_between(point_a, point_b):
 
 # FIND WHICH ROUTE A CUSTOMER IS CURRENTLY IN
 
-# This function goes thru ea route and returns the index of the route that contins said customer.
+# This function iterates through each route and returns the index of the route that contains said customer.
 # It returns None if not found. Ideally, this shouldn't happen, but I had it to check for good practice.
 def find_route_containing(customer_id, routes):
     for index in range(len(routes)):
@@ -50,7 +50,7 @@ def clarke_wright(coords, demands, capacity, depot_id):
             customers.append(customer_id)
 
     # starts with one route per customer
-    # ea route is a list of customer IDs (the depot is added
+    # each route is a list of customer IDs (the depot is added
     # to the start/end at the end of the function)
     routes = []
     for customer_id in customers:
@@ -80,7 +80,7 @@ def clarke_wright(coords, demands, capacity, depot_id):
     # beneficial pairs are merged first
     savings_list.sort(key=lambda item: item[0], reverse=True)
 
-    # go thru the sorted savings and try to merge routes
+    # go through the sorted savings and try to merge routes
     for savings_amount, customer_1, customer_2 in savings_list:
         route_1_index = find_route_containing(customer_1, routes)
         route_2_index = find_route_containing(customer_2, routes)
@@ -104,7 +104,7 @@ def clarke_wright(coords, demands, capacity, depot_id):
         if not (customer_2_at_start or customer_2_at_end):
             continue
 
-        # check that merging the two routes wont go over capacity
+        # check that merging the two routes won't go over capacity
         route_1_demand = sum(demands[c] for c in route_1)
         route_2_demand = sum(demands[c] for c in route_2)
         if route_1_demand + route_2_demand > capacity:

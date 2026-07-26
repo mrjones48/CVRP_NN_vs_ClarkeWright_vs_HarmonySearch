@@ -7,7 +7,7 @@
 - Charles Davis
 
 ## Problem Description
-The CVRP finds optimal vehicle routes to deliver goods to customers while minimizing cost, with each vehicle limited by a fixed capacity. The Nearest Neighbor Heuristic, repeatedly visiting the closest unvisited customer until capacity is reached, serves as a baseline algorithm for comparison.
+The Vehicle Routing Problem (VRP) seeks the optimal set of routes for a fleet of vehicles delivering goods to customers while minimizing total travel distance. This study focuses on the Capacitated Vehicle Routing Problem (CVRP), where each vehicle has a fixed carrying capacity that limits how much demand it can serve per route. Three algorithms are compared to solve this problem: Nearest Neighbor, Clarke-Wright Savings, and Harmony Search. The performance of these algorithms is analyzed based on percentage gap from the best-known CVRPLIB solution, computational efficiency, and their ability to generate feasible routes for CVRP instances.
 
 ## Algorithms Implemented
 1. Nearest Neighbor Heuristic: This will be used as the baseline algorithm. The vehicle repeatedly visits the closest unvisited customer until capacity is reached.

@@ -12,8 +12,8 @@ import sys
 # READ THE DATA FILE
 
 # This function reads the .vrp file and pulls out the following: 
-# the customer's coordinates, how much ea customer needs delivered, how 
-# much a truck can carry, and which costumer is the depot (the starting and ending point for the truck's route).
+# the customer's coordinates, how much each customer needs delivered, how 
+# much a truck can carry, and which customer is the depot (the starting and ending point for the truck's route).
 def read_vrp_file(filepath):
 
     coords = {}        # customer_id: (x, y)
@@ -85,7 +85,7 @@ def distance_between(point_a, point_b):
     x2, y2 = point_b
     return math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
 
-# This function adds up the distance traveled across ea route in the solution
+# This function adds up the distance traveled across each route in the solution
 def total_distance(routes, coords):
     grand_total = 0.0
     for route in routes:
@@ -103,7 +103,7 @@ def nearest_neighbor(coords, demands, capacity, depot_id):
     customers_to_visit = set(coords.keys())
     customers_to_visit.remove(depot_id)
 
-    all_routes = [] # ea route is a list of customer IDs, starting and ending at the depot
+    all_routes = [] # each route is a list of customer IDs, starting and ending at the depot
 
     while len(customers_to_visit) > 0:
         current_route = [depot_id]

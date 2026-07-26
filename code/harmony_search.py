@@ -48,7 +48,7 @@ def score_sequence(sequence, demands, capacity, depot_id, coords):
 
 
 def improve_sequence(sequence, demands, capacity, depot_id, coords, attempts=12):
-	# Try deterministic adjacent swaps and keep improvements.
+	# try deterministic adjacent swaps and keep improvements
 	best_sequence = sequence[:]
 	best_distance = score_sequence(best_sequence, demands, capacity, depot_id, coords)[1]
 
@@ -153,16 +153,16 @@ def harmony_search(
 
 	harmony_memory = []
 
-	# Initialize harmony memory using random feasible harmonies only.
-	# This keeps Harmony Search fully self-contained (no seeding from other algorithms).
+	# initialize harmony memory using random feasible harmonies only
+	# this keeps Harmony Search fully self-contained (no seeding from other algorithms)
 	while len(harmony_memory) < harmony_memory_size:
 		start_sequence = deterministic_sequence(customers, len(harmony_memory))
 		harmony_memory.append((score_sequence(start_sequence, demands, capacity, depot_id, coords)[1], start_sequence))
 
-	# Keep the memory sorted so the best harmony is always first and the worst is last.
+	# keep the memory sorted so the best harmony is always first and the worst is always last
 	harmony_memory.sort(key=lambda item: item[0])
 
-	# Each iteration tries one new candidate and replaces the worst memory entry if it is better.
+	# each iteration tries one new candidate and replaces the worst memory entry if it is better
 	for iteration_number in range(number_of_iterations):
 		new_sequence = improvise_sequence(
 			harmony_memory,
@@ -180,7 +180,7 @@ def harmony_search(
 			harmony_memory.sort(key=lambda item: item[0])
 			harmony_memory = harmony_memory[:harmony_memory_size]
 
-	# Return the best solution found in memory.
+	# return the best solution found in memory
 	return score_sequence(harmony_memory[0][1], demands, capacity, depot_id, coords)[0]
 
 

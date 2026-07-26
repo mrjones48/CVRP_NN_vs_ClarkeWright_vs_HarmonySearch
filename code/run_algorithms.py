@@ -45,11 +45,11 @@ for algorithm_name, algorithm_function in algorithms:
         coords, demands, capacity, depot_id = read_vrp_file(filepath)
         num_customers = len(coords) - 1  # minus 1 because the depot isn't a customer
 
-        # runs the algorithm 10 times and record how long ea run takes.
+        # runs the algorithm 10 times and record how long each run takes.
         # the Nearest Neighbor gives the same routes and distance every
         # time because it doesn't use any randomness, so that's why I only saved the
         # distance once. but we still keep time of all 10 runs since the exact runtime
-        # can vary slightly ea time just from normal computer background activity.
+        # can vary slightly each time just from normal computer background activity.
         runtimes = []
 
         for trial_number in range(number_of_trials):

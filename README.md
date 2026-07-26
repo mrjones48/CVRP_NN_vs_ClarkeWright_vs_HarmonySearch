@@ -45,4 +45,4 @@ Switch out "A-n32-k5.vrp" with the following to view the results of the other da
 To individually test these data sets with other algorithms, switch "nearest_neighbor" with "clarke_wright" or "harmony_search".
 
 ## GenAI Usage Disclosure 
-This project used Claude for debugging code, understanding Python concepts, and Git/GitHub troubleshooting. All algorithm logic, experimental decisions, analysis, and results were produced and verified by the team. 
+This project used Claude for generating graphs, debugging code, understanding Python concepts, and Git/GitHub troubleshooting. All algorithm logic, experimental decisions, analysis, and results were produced and verified by the team. 
